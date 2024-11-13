@@ -1,0 +1,223 @@
+/* Style global pour rendre la page plus uniforme */
+body {
+    font-family: 'Roboto', sans-serif;
+    background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    box-sizing: border-box;
+    transition: background 0.3s ease;
+}
+
+/* Header principal */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 15px;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Menu de navigation */
+nav {
+    background-color: #f4f4f4;
+    padding: 15px;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+}
+
+/* Boutons de navigation */
+.nav-button {
+    text-decoration: none;
+    color: #333;
+    padding: 12px 25px;
+    margin: 0 8px;
+    border: 1px solid #333;
+    border-radius: 8px;
+    background-color: #fff;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.nav-button:hover {
+    background-color: #ddd;
+    transform: translateY(-2px);
+}
+
+.container {
+    width: 80%;
+    margin: auto;
+    padding: 30px;
+    max-width: 1200px;
+}
+
+/* Navbar principale */
+.navbar {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    background-color: #333;
+    display: flex;
+    justify-content: center;
+}
+
+.navbar li {
+    display: inline;
+}
+
+.navbar li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navbar li a:hover {
+    background-color: #ddd;
+    color: #333;
+}
+
+/* Bouton réserver à droite */
+.btn-reser {
+    margin-left: auto;
+    padding: 12px 25px;
+    background-color: #1e80d1;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.btn-reser:hover {
+    background-color: #1677b5;
+    transform: scale(1.05);
+}
+
+/* Section principale */
+section {
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 15px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+    max-width: 900px;
+    width: 100%;
+    text-align: center;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+}
+
+section:hover {
+    box-shadow: 0 15px 50px rgba(0, 0, 0, 0.2);
+    transform: translateY(-5px);
+}
+
+/* Titres */
+h1, h2 {
+    color: #5A67D8;
+    font-size: 2.2em;
+    margin-bottom: 20px;
+    font-weight: 600;
+}
+
+/* Formulaires */
+form {
+    margin-bottom: 25px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+label {
+    font-size: 1.1em;
+    margin-bottom: 8px;
+    color: #444;
+}
+
+/* Input text personnalisé */
+input[type="text"] {
+    padding: 12px;
+    width: 80%;
+    max-width: 450px;
+    margin-bottom: 15px;
+    border: 1px solid #d1dce5;
+    border-radius: 10px;
+    font-size: 1em;
+    background-color: #fafbfc;
+    transition: border 0.3s ease;
+}
+
+input[type="text"]:focus {
+    border-color: #5A67D8;
+    outline: none;
+}
+
+/* Bouton de soumission */
+button[type="submit"] {
+    padding: 12px 25px;
+    background-color: #5A67D8;
+    color: #ffffff;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    font-size: 1.1em;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #4C51BF;
+    transform: scale(1.05);
+}
+
+/* Tableau */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 25px;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.05);
+}
+
+thead {
+    background-color: #5A67D8;
+    color: #ffffff;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+    border-bottom: 1px solid #eaeaea;
+    font-size: 1em;
+    font-weight: 400;
+}
+
+tr:nth-child(even) {
+    background-color: #f9fafb;
+}
+
+tr:hover {
+    background-color: #f1f5f9;
+    transform: translateY(-2px);
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+th {
+    font-weight: 600;
+}
+
+/* Message d'absence de résultats */
+p {
+    color: #6b7280;
+    font-size: 1.1em;
+    margin-top: 30px;
+    font-style: italic;
+}
