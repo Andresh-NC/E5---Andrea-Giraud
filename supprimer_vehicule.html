@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Supprimer un véhicule</title>
+    <link rel="stylesheet" href="supprimer_vehicule.css">
+</head>
+<body>
+    <header>
+        <h2>Supprimer un véhicule</h2>
+        <div class=menutoggle onclick="toggleMenu();">
+        </div>
+        <ul class="navbar">
+            <li><a href="ajouter_vehicule.html" class="btn-reser" onclick="toggleMenu();">Ajouter un véhicule</a></li>
+            <li><a href="rechercher_vehicule.html" class="btn-reser" onclick="toggleMenu();">Rechercher un véhicule</a></li>
+            <li><a href="modifier_vehicule.php" class="btn-reser" onclick="toggleMenu();">Modifier un véhicule</a></li>
+            <li><a href="voirlocation.php" class="btn-reser" onclick="toggleMenu();">Historique de locations</a></li>
+        </ul>
+    </header>
+
+    <form action="supprimer_vehicule.php" method="post">
+        <label for="immatriculation">Immatriculation du véhicule à supprimer :</label>
+        <input type="text" id="immatriculation" name="immatriculation" required><br><br>
+        <button type="submit">Supprimer</button>
+    </form>
+
+</body>
+</html>
