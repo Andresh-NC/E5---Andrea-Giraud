@@ -1,0 +1,163 @@
+/* Styles communs à toutes les pages */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav-left, .nav-right {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+.nav-left li, .nav-right li {
+    margin: 0 15px;
+}
+
+.nav-left li a, .nav-right li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.nav-left li a:hover, .nav-right li a:hover {
+    text-decoration: underline;
+}
+
+.title {
+    font-size: 24px;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+    bottom: 0;
+    width: 100%;
+}
+
+main {
+    padding: 40px;
+}
+
+/* Section de services */
+.services-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.service-list {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.service-item {
+    background-color: #f5f5f5;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 45%;
+    margin-bottom: 20px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.service-item h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+/* Table de prix */
+.prices-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.prices-table {
+    margin: 0 auto;
+    width: 80%;
+    border-collapse: collapse;
+}
+
+.prices-table th, .prices-table td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: center;
+}
+
+.prices-table th {
+    background-color: #333;
+    color: white;
+}
+
+.prices-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+}
+
+/* Section contact */
+.contact-section {
+    padding: 40px;
+    text-align: center;
+}
+
+.contact-section form {
+    margin-bottom: 40px;
+}
+
+.contact-section form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+.contact-section form input, .contact-section form textarea {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    resize: none;
+}
+
+.contact-section form button {
+    padding: 10px 20px;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact-info {
+    margin-top: 40px;
+}
+
+.contact-info h3 {
+    font-size: 20px;
+}
+
+.contact-info p {
+    margin: 5px 0;
+}
